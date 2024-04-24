@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    padding: 20px 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: #DADADA;
+}
+
+.titulo_principal {
+    font-size: 24px;
+    border: 1px solid red;
+    text-align: center;
+}
+
+.seccion_principal {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.seccion_datos_personales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid red;
+    align-items: center;
+}
+
+.wrapper_foto_perfil {
+    border: 2px solid pink;
+    border-radius: 20px;
+}
+
+.wrapper_foto_perfil img {
+    border-radius: 10px;
+}
+
+.dato {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.footer {
+    background-color: #465b93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0px;
+}
+
+.wrapper_logo {
+    width: 150px;
+}
