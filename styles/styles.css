@@ -11,7 +11,6 @@ img {
 
 .header {
     width: 100%;
-    border: 1px solid red;
     display: flex;
     padding: 20px 40px;
     align-items: center;
@@ -21,12 +20,10 @@ img {
 
 .titulo_principal {
     font-size: 24px;
-    border: 1px solid red;
     text-align: center;
 }
 
 .seccion_principal {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     padding: 30px;
@@ -36,17 +33,22 @@ img {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
     align-items: center;
+    max-width: 600px;
+    align-self: center;
 }
 
 .wrapper_foto_perfil {
-    border: 2px solid pink;
     border-radius: 20px;
+    max-width: 400px;
 }
 
 .wrapper_foto_perfil img {
     border-radius: 10px;
+}
+
+.datos_personales {
+    max-width: 400px;
 }
 
 .dato {
@@ -65,4 +67,45 @@ img {
 
 .wrapper_logo {
     width: 150px;
+}
+
+/****************************************/
+/********** RESPONSIVE ******************/
+/****************************************/
+@media (min-width: 800px) {
+
+    .header {
+        padding: 55px 40px;
+    }
+
+    .titulo_principal {
+        font-size: 36px;
+    }
+
+    .seccion_principal {
+        padding: 32px;
+    }
+
+    .seccion_datos_personales {
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1200px;
+    }
+
+    .datos_personales {
+        max-width: 50%;
+    }
+
+    .dato {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .footer {
+        padding: 0;
+    }
+    
+    .wrapper_logo {
+        width: 250px;
+    }
 }
